@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais de origem</title>
+</head>
+<body>
+    <h1>Descubra sua nacionalidade</h1>
+    <label for="ipais">Qual seu pais de origem: </label>
+    <input type="text" id="ipais" placeholder="Digite o nome do país">
+    <button onclick="calcular()">Calcular</button><br>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular(){
+            let ipais = document.getElementById("ipais").value;
+            var res = document.getElementById('resultado');
+            if(ipais == "Brasil"){
+                res.innerHTML = 'Você é brasileiro';
+            }else if (ipais == "EUA") {
+                res.innerHTML = 'Você é americano';
+            } else if (ipais == "China") {
+                res.innerHTML = 'Você é chinês';
+            } else {
+                res.innerHTML = 'Não reconheço esse país';
+            }
+        }
+    </script>
+</body>
+</html>

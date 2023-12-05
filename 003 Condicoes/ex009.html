@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detram</title>
+    <style>
+        body{
+            font-family: Arial;
+            background-color:#f2f2f2;
+        }
+        input{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <label for="ivel">Velociade do carro: </label>
+    <input type="number" name="vel" id="ivel">
+    <label for="ivel">Km/h</label>
+    <button onclick="calcular()">Calcular</button><br>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var vel = document.getElementById('ivel').value;
+            var res = document.getElementById('resultado');
+
+            res.innerHTML = `<p>Sua velocidade atal é de <strong>${vel} Km/h</strong></p>`;
+            if(vel <= 60){
+                res.innerHTML += "A velocidade é permitida!";
+                }else if (vel > 60 && vel <= 90) {
+                    res.innerHTML += "Multa de R$75";
+                    } else{
+                        res.innerHTML += "Multa de R$140";
+                    }
+        }
+    </script>
+</body>
+</html>
