@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    font:normal 15pt 'Roboto', sans-serif;
+    background-color: rgb(39, 39, 130);
+    text-align: center;
+}
+header{
+    color: aliceblue;
+}
+section{
+    background-color: aliceblue;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    color: aliceblue;
+}
