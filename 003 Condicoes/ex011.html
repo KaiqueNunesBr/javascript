@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicoes Multiplas</title>
+</head>
+<body>
+    <h1>Switch</h1>
+    <div id="diaHj">
+        dia: 
+    </div>
+    <script>
+        var agora = new Date();
+        var diaSemana = agora.getDay(); // 0 - Domingo | 6 - Sabado
+        var diahj = document.getElementById('diaHj');
+        switch(diaSemana){
+            case 0: 
+                diahj.innerHTML += 'Domingo';
+                break;
+            case 1:
+                diahj.innerHTML += 'Segunda';
+                break;
+            case 2:
+                diahj.innerHTML += 'Terça';
+                break;
+            case 3:
+                diahj.innerHTML += 'Quarta';
+                break;
+            case 4:
+                diahj.innerHTML += 'Quinta';
+                break;
+            case 5:
+                diahj.innerHTML += 'Sexta';
+                break;
+            case 6:
+                diahj.innerHTML += 'Sábado';
+                break;
+        }
+    </script>
+</body>
+</html>
