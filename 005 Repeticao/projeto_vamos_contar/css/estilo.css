@@ -3,10 +3,11 @@
 body{
     font:normal 15pt 'Roboto', sans-serif;
     background-color: rgb(39, 39, 130);
-    text-align: center;
 }
-header{
+header, footer{
     color: aliceblue;
+    padding:20px;
+    text-align:center;
 }
 section{
     background-color: aliceblue;
@@ -17,6 +18,43 @@ section{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-footer{
-    color: aliceblue;
+section > div > label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    min-width: 3.2em;
+    max-width: 7em;
+    margin: 10px 1em 0 0;
+    padding: 0 .5em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+section > div > input {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    min-width: 10em;
+    max-width: 12em;
+    margin: 10px 0 0 1em;
+    padding: 0 .5em;
+    border-radius: 10px;
+    border: solid thin #aaa;
+}
+
+section > div > button {
+    height: 40px;
+    width: 115px;
+    padding: .5em;
+    margin-left: 10px;
+    border-radius: 10px;    
+    border: none;
+    cursor: pointer;
+    background-color: rgb(80, 80, 200);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
 }
