@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+    font:normal 15pt 'Roboto', sans-serif;
+    background-color: rgb(39, 39, 130);
+}
+header, footer{
+    text-align: center;
+    color: aliceblue;
+}
+section{
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+div{
+    padding: 10px;
+}
+
+input#iano{
+    width: 100px;
+    padding-left: 10px;
+    line-height: 1.5;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+div > button {
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(55, 55, 185); /* Green */
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+}
+
+div > button:hover {
+    background-color: #4CAF50;
+}
+
+div#resultado {
+    text-align: center;
+}
