@@ -17,6 +17,21 @@ section{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+div > input#txtNum {
+    display: inline-block;
+    width: 100px;
+}
+
+select {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    appearance: none;
+    overflow: hidden;
+}
+
 footer{
     color: aliceblue;
 }
